@@ -1,0 +1,74 @@
+@font-face { font-family: 'Blinker'; src: url('/static/fonts/Blinker-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: block; }
+@font-face { font-family: 'Blinker'; src: url('/static/fonts/Blinker-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; font-display: block; }
+@font-face { font-family: 'Blinker'; src: url('/static/fonts/Blinker-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: block; }
+@font-face { font-family: 'Blinker'; src: url('/static/fonts/Blinker-Light.ttf') format('truetype'); font-weight: 100; font-style: normal; font-display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+	ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+	hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+::-webkit-scrollbar { display: none; }
+
+
+html, body { user-select: none; line-height: 1; margin: 0; padding: 0; font-size: 12px; font-family: 'Blinker', sans-serif; color: #000; background-color: rgba(0,0,0,0); pointer-events: none; height: 100vh; width: 100%; position: relative; overflow-y: hidden; }
+input, button, select, textarea { font-family: 'Blinker', sans-serif; outline: none; cursor: pointer; line-height: 1 }
+a { text-decoration: none; color: #D81B60; }
+a:link, a:active { text-decoration: none }
+a:visited { text-decoration: none; }
+
+
+* { box-sizing: border-box; }
+
+
+@page {
+	size: A4;
+	margin: 0;
+}
+@media print {
+	html, body {
+		width: 210mm;
+		height: 149mm;
+	}
+
+	#print-adm { font-family: 'Blinker', sans-serif; font-size: 12px; color: red; }
+}
+
+
+/** vowels **/
+button.br-confirm { height: 24px; padding: 2px 5px; border: 1px solid #e0e0d0; background: #f8f8f0; font-size: 14px; color: #444; border-radius: 5px; }
+button.br-confirm svg { width: 10px; height: 10px; margin-right: 5px; }
+
+input.f-input { width: 100%; height: 28px; border-radius: 2px; color: #000; padding: 3px 8px 3px 8px; border: none; background-color: #fdfdfd; font-size: 12px; outline: none; cursor: pointer; border-style: solid; border-width: 1px; border-color: #fbfbfb #eaeaea #d0d0d0 #eaeaea; }
+input.f-input:placeholder { color: #222 }
+
+.blur-w0 { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff }
+
+.ta-l { text-align: left }
+.ta-r { text-align: right }
+.ta-c { text-align: center }
+
+button.b-e { background-color: #f0f0f0; display: inline-block; font-size: 11px; border: 1px outset #f0f0f0; margin: 2px 4px; padding: 2px 10px; }
+button.b-e svg { width: 9px; height: 9px; color: #909090; margin-right: 4px; }
+button.b-e:hover { background-color: #e0e0e0; }
+
+button.md { height: 22px; }
+button.lg { height: 26px; }
+button.ok { background-color: #aac9ce; }
+button.wn { background-color: #ffdecd; }
+button.er { background-color: #f5ded1 ;}
+
+input.i-e { background-color: #fff; display: inline-block; font-size: 12px; border: 1px outset #f0f0f0; padding: 6px 10px; height: 22px; }
+
+.m-4l { margin-left: 4px }
+.m-4r { margin-right: 4px }
