@@ -21,7 +21,7 @@ import 'vue-awesome/icons/circle-notch';
 export default {
 	methods: {
 		sessionDestroy() {
-			window.localStorage.clear('nid');
+			window.localStorage.clear('api_token');
 			this.$router.push('/');
 		}
 	}

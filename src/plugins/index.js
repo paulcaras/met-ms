@@ -90,6 +90,21 @@ export default {
 		});
 		Vue.prototype.$http.interceptors.request.use(function (config) {
 				const api_token = window.localStorage.getItem("api_token") || "0";
+				var getCookie = function(cname) {
+					let name = cname + "=";
+					let ca = document.cookie.split(';');
+					for(let i = 0; i < ca.length; i++) {
+						let c = ca[i];
+						while (c.charAt(0) == ' ') {
+							c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0) {
+							return c.substring(name.length, c.length);
+						}
+					}{{ csrf_token }}
+						return "";
+				};
+				config.headers.common["X-CSRFToken"] = getCookie("csrftoken");
 				config.headers.common["Authorization"] = "Token "+ JSON.parse(api_token);
 				return config;
 			}, function (error) {

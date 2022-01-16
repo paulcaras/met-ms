@@ -14,7 +14,7 @@
 			<ul class="c" style="padding: 24px 0 0 0">
 				<li>
 					<div class="l">
-						<span>
+						<span @click="$router.push({ name: 'a-sett-index' })">
 							<v-icon name="cog"></v-icon>
 						</span>
 					</div>

@@ -10,6 +10,7 @@ Vue.use(VueRouter);
 const routes = [
 	{ path: '', component: InitView,
 		children: [
+			{ path: '', component: LoadIndex, name: 'load-index-0' },
 			{ path: '/', component: LoadIndex, name: 'load-index' },
 			{ path: 'config-info', component: () => import('../views/ConfigInfo.vue'), name: 'config-info' },
 		]
@@ -34,6 +35,12 @@ const routes = [
 		]
 	},
 
+	{ path: '/sett', component: MainView,
+		children: [
+			{ path: 'index', component: () => import('../views/sett/Index.vue'), name: 'sett-index' }
+		]
+	},
+
 	{ path: '/read', component: MainView,
 		children: [
 			{ path: 'index', component: () => import('../views/read/Index.vue'), name: 'read-index' },
@@ -52,7 +59,8 @@ const routes = [
 			{ path: 'node-list', component: () => import('../views/a/NodeList.vue'), name: 'a-node-list' },
 			{ path: 'read-list-all', component: () => import('../views/a/ReadListAll.vue'), name: 'a-read-list-all' },
 			{ path: 'read-list-one', component: () => import('../views/a/ReadListOne.vue'), name: 'a-read-list-one' },
-			{ path: 'node-make', component: () => import('../views/a/NodeMake.vue'), name: 'a-node-make' }
+			{ path: 'node-make', component: () => import('../views/a/NodeMake.vue'), name: 'a-node-make' },
+			{ path: 'sett-index', component: () => import('../views/a/SettIndex.vue'), name: 'a-sett-index' }
 	]
 },
 

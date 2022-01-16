@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	outputDir: 'dist',
-	assetsDir: 'static',
+	assetsDir: 'assets',
 	pages: {
 		index: {
 			entry: 'src/main.js',
